@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-int main(){
-	/*
+/*
 	Nama : Christy Grace Siagian
 	NIM : 18317501
 	Tanggal : 23 Januari 2020
 	Tentang : Program Menghitung Titik Potong menggunakan Matriks
 */
+
+int main(){
+
 	int x1,x2,y1,y2,c1,c2;
 	int x, y;
 	int dx[2][2];
