@@ -3,7 +3,7 @@
 [PENGUMPULAN TUGAS]
 
 Silakan kumpulkan tugas/kuis di git https://github.com/ramadhitau/pmc.git
-Anda bisa mengumpulkan tugas dengan cara remote (langsung dari pc anda, menggunakan command prompt)
+Anda bisa mengumpulkan tugas dengan upload langsung ke sini atau dengan cara remote (langsung dari pc anda, menggunakan command prompt)
 
 Step:
 
