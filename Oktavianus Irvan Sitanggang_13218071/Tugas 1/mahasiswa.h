@@ -8,17 +8,17 @@ typedef struct{
 }mahas;
 
 
-void constructor(mahas *_a, char Nama[100], float Nilai, char Indeks);
+void constructor(mahas *_a, char Nama[100], float Nilai, char Indeks); // memasukkan Nama, Nilai dan Indeks ke dalam variable mahas
 
-char findModusIndeks(mahas a[], int total);
+char findModusIndeks(mahas a[], int total); // mencari modus
 
-int findNumModusIndeks(mahas a[], int total);
+int findNumModusIndeks(mahas a[], int total);// mencari jumlah modus
 
-int findMax(mahas a[], int total);
+int findMax(mahas a[], int total); //mencari indeks mahasisswa yang memiliki nilai Max
 
-int findMin(mahas a[], int total);
+int findMin(mahas a[], int total); // mencari indeks mahasiswa yang memiliki nilai Min
 
-float findAvg(mahas a[], int total);
+float findAvg(mahas a[], int total);// mencari nilai rerata
 
 
 #endif

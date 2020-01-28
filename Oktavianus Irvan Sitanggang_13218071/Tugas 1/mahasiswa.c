@@ -7,6 +7,7 @@ void constructor(mahas *a_, char Nama[100], float Nilai, char Indeks){
 	memcpy(((a_)->Nama) , Nama, 100);
 	(a_)->Indeks = Indeks;
 }
+
 char findModusIndeks(mahas a[], int total){
 	int i;
 	int count[5];
