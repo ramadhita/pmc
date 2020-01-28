@@ -1,3 +1,8 @@
+/*
+Anindhita N.
+13218083
+*/
+
 #include <stdio.h>
 #include <math.h>
 
