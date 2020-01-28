@@ -1,12 +1,10 @@
+//NIM/NAMA	: 13218029/ZULFIKAR NIMA ARIFUZZAKI
+//FUNCTION DAN STRUCT
+
 #include <stdio.h>
 #include <string.h>
+#include "func.h"
 
-	struct alamat
-	{
-		char nama[10];
-		int nilai;
-		char indeks;
-		};
 
 int main()
 {	
@@ -16,7 +14,9 @@ int main()
 	int min, i_min;
 	float jumlah;
 	float rata;
+	char modusd;
 	
+	//PENGISIAN NAMA DAN NILAI
 	strcpy(siswa[0].nama, "Mawar");
 	siswa[0].nilai = 67;
 	
@@ -32,21 +32,22 @@ int main()
 	strcpy(siswa[4].nama, "Lili");
 	siswa[4].nilai = 60;
 	
+	// PENGISIAN INDEKS
 	for (i = 0; i <= 4; i = i + 1)
 	{
-		if (siswa[i].nilai <= 30)
+		if (siswa[i].nilai <= 50)
 		{
 			siswa[i].indeks = 'E';
 			}
-		else if ((siswa[i].nilai <= 50) && (siswa[i].nilai > 30))
+		else if ((siswa[i].nilai <= 60) && (siswa[i].nilai > 50))
 		{
 			siswa[i].indeks = 'D';
 			}
-		else if ((siswa[i].nilai <= 70) && (siswa[i].nilai > 50))
+		else if ((siswa[i].nilai <= 70) && (siswa[i].nilai > 60))
 		{
 			siswa[i].indeks = 'C';
 			}
-		else if ((siswa[i].nilai <= 90) && (siswa[i].nilai > 70 ))
+		else if ((siswa[i].nilai <= 80) && (siswa[i].nilai > 70 ))
 		{
 			siswa[i].indeks = 'B';
 			}
@@ -55,7 +56,9 @@ int main()
 			siswa[i].indeks = 'A';
 			};
 		};
-	 max = 0;
+	
+	//MENCARI NILAI MINIMUM DAN MAKSIMUM
+	max = 0;
 	 i_max = 99;
 	 i_min = 0;
 	 min = 0;
@@ -75,10 +78,26 @@ int main()
 			 };
 		jumlah = jumlah + siswa[i].nilai;
 	};
+	
+	//MENCARI RATAAN
 	rata = jumlah/5;
-	printf("%d", jumlah);
-	printf("Nilai tertinggi adalah %d diraih oleh %s\n", siswa[i_max].nilai, siswa[i_max].nama);
-	printf("Nilai terendah adalah %d diraih oleh %s\n", siswa[i_min].nilai, siswa[i_min].nama);
-	printf("Rata-rata nilai adalah %f \n", rata);
+	
+	//MENCETAK NILAI MAX, MIN, DAN MEAN
+	for (i = 0; i < 5; i = i+1)
+	{
+		if (siswa[i].nilai == siswa[i_max].nilai)
+		{
+			printf("Nilai tertinggi adalah %d diraih oleh %s\n", siswa[i].nilai, siswa[i].nama);
+			};
+		if (siswa[i].nilai == siswa[i_min].nilai)
+		{
+			printf("Nilai terendah adalah %d diraih oleh %s\n", siswa[i].nilai, siswa[i].nama);
+			}; 
+		}
+
+	printf("Rata-rata nilai adalah %.2f \n", rata);
+	modusd = modus(siswa, 5);
+	printf("Modus indeks adalah %c", modusd); 
+	
 	 return(0);
 	}
