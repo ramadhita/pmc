@@ -36,7 +36,8 @@ char findModusIndeks(mahas a[], int total){
 		if (count[i] > count[ans]){
 			ans = i;
 		}
-	}	if (ans == 0){
+	}
+	if (ans == 0){
 		return 'A';
 	}
 	else if (ans == 1){
@@ -51,6 +52,38 @@ char findModusIndeks(mahas a[], int total){
 	else{
 		return 'E';
 	}	
+}
+
+int findNumModusIndeks(mahas a[], int total){
+	int i;
+	int count[5];
+	int ans = 0;
+	for (i = 0; i < 5; ++i){
+		count[i] = 0;
+	}	
+	for (i = 0; i < total; ++i){
+		if ((a[i]).Indeks == 'A'){
+			count[0] += 1;
+		}
+		else if ((a[i]).Indeks == 'B'){
+			count[1] += 1;
+		}		
+		else if ((a[i]).Indeks == 'C'){
+			count[2] += 1;
+		}
+		else if ((a[i]).Indeks == 'D'){
+			count[3] += 1;
+		}
+		else if ((a[i]).Indeks == 'E'){
+			count[4] += 1;
+		}		
+	}
+	for (i = 1; i < 5; ++i){
+		if (count[i] > count[ans]){
+			ans = i;
+		}
+	}
+	return count[ans];
 }
 
 
