@@ -50,7 +50,7 @@ int main(){
 	printf("=> Nilai rata-rata adalah %d \n", rata2);
 	printf("\n");
 
-	//cari max
+	//cari max dan min
 	int max = siswa[0].nilai;
 	int imax = 0;
 	int min = siswa[0].nilai;
