@@ -30,7 +30,7 @@ int main() {
     struct Mahasiswa maks;
     struct Mahasiswa min;
     float average = 0;
-    int frekuensiIndeks[5] = {0};
+    int frekuensi[5] = {0};
     for (int i = 0; i < N; i++){
 
         // input nama
@@ -61,7 +61,7 @@ int main() {
         average += d[i].nilai / (float) N;
 
         // tambahkan ke tabel frekuensi indeks
-        frekuensiIndeks[(int) d[i].indeks - 65]++;
+        frekuensi[(int) d[i].indeks - 65]++;
     }
 
     printf("\nOUTPUT\n");
@@ -74,7 +74,7 @@ int main() {
     // cari modus
     int modus = 0;
     for (int i = 1; i < 5; i++) {
-        if (frekuensiIndeks[i] > frekuensiIndeks[modus]) {
+        if (frekuensi[i] > frekuensi[modus]) {
             modus = i;
         }
     }
