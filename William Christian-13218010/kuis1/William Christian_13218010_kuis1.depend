@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1579658686 source:d:\kuliah\semester 4\el2008 pemecahan masalah dengan c\program_quiz_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
