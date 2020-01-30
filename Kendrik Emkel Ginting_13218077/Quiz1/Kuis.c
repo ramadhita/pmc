@@ -19,7 +19,7 @@ int main(void)
         ypos = ypos + vy*0.01 - (grav/2*0.01*0.01); // h=h0+v0.t-1/2*gt^2
         vy = vy - grav*0.01;
     } while (ypos>0);
-    printf("Jarak terjauh adalah %3.2f meter. \n", xfar);
+    printf("Ja terjauh adalah %3.2f meter. \n", xfar);
 
     return (0);
 }
