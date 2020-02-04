@@ -14,7 +14,7 @@ int main(void)
     int count;
 
     printf("Masukkan jari-jari lingkaran : ");
-    scanf(" %lf", &r);
+    scanf(" %Lf", &r);
 
     printf("Selang interval per : ");
     scanf(" %d", &count);
@@ -36,9 +36,9 @@ int main(void)
         luas2 += interval * hasil;
     }
 
-    printf("Luas dengan perkalian biasa adalah %lf. \n", luas1);
-    printf("Luas dengan integral adalah %lf. \n", luas2);
+    printf("Luas dengan perkalian biasa adalah %Lf. \n", luas1);
+    printf("Luas dengan integral adalah %Lf. \n", luas2);
 
     error = luas1 - luas2;
-    printf("Error : %lf", error);
+    printf("Error : %Lf", error);
 }
