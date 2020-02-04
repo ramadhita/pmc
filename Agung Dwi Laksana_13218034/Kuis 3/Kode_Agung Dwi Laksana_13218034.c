@@ -1,7 +1,7 @@
 // NAMA    : AGUNG DWI LAKSANA
 // NIM     : 13218034
 // PROGRAM : INTEGRAL
-// TANGGAL : 4 Fwbeuari 2020
+// TANGGAL : 4 Februari 2020
 
 #include <stdio.h>
 
