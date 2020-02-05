@@ -19,7 +19,6 @@ int main ()
         delta_r += 1;
     }
     Area = Area/(pembagi);
-    //Area = Area/(pangkat(10,n));
     area1 = pi*(pangkat(r,2));
     error = area1 - Area;
     printf("Luas Lingkaran = %f \n", Area);
