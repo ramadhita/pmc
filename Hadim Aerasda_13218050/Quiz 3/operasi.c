@@ -30,6 +30,6 @@ void input(double *a,double *b)
 {
     printf("Masukkan Jari-Jari : ");
     scanf("%lf", a);
-    printf("Masukkan range : ");
+    printf("Tingkat Ketelitian (5) : ");
     scanf("%lf", b);
 }
