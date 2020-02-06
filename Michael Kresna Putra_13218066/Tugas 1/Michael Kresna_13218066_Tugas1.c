@@ -1,6 +1,6 @@
   
 //Nama      :Michael Kresna Putra
-//NIM       :13218044
+//NIM       :13218066
 //Tanggal   :28 Januari 2020
 
 #include <stdio.h>
