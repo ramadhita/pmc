@@ -1,5 +1,5 @@
 //Nama      :Michael Kresna Putra
-//NIM       :13218044
+//NIM       :13218066
 //Tanggal   :3 Februari 2020
 
 //Program untuk menerima input berupa jari-jari kemudian menghasilkan perhitungan melalui dua pendekatan dan menghitung errornya

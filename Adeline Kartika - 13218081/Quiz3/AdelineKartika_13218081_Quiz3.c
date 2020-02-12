@@ -9,8 +9,8 @@
 
 int main(){
     double pi = 3.142857142857143;
-    double r = 7;
-    double n = 100000;
+    double r = 7; // nilai jari-jari lingkaran
+    double n = 100000; // jumlah partisi pembagi integral riemann
     double luas1, luas2, jumlah, dx1, dx2, error;
 
     double i1, i2 = 0;
