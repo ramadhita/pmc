@@ -1,12 +1,19 @@
-/* EL2208 Praktikum Pemecahan Masalah dengan C
-*Modul       :
-*Percobaan   : 
-*Hari/Tanggal: 
+/* EL2008 Pemecahan Masalah dengan C
+*Hari/Tanggal: Saturday/15-02-2020
 *Nama/NIM    : Oktavianus Irvan Sitanggang/13218071
-*Asisten/NIM : 
 *Nama File   : main.c
-*Deskripsi   : 
+*Deskripsi   : Mencari nilai pada resistor
 */
+
+
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int main(){
+    
+    return 0;
+}
 
 #define TMAX 10000
 #define Cap 0.000001
