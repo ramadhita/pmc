@@ -9,6 +9,10 @@
 */
 
 #define TMAX 10000
+#define Cap 0.000001
+#define T_S 0.00001
+#define Vs 5
+#define Res 10000
 #include <stdio.h>
 #include <math.h>
 
@@ -19,13 +23,17 @@ int main(){
     double curr;
     double delV;
     double Vc = 0;
-    curr = 5/10000;
-    int i = 0;
+    curr = 5/Res;// current awal
+
+    int i = 0;// inisialisasi pada i
+
     for (; i < TMAX; i++){
-        delV = curr*0.00001/0.000001;
-        Vc += delV;
-        curr = (5 - Vc)/ 10000;
-        fprintf(out,"%f,%f\n", i*0.01,Vc);
+
+        delV = curr*T_S/Cap;// mencari nilai perubahan V
+        Vc += delV;//ditambahkan
+        curr = (Vs - Vc)/ Res;//current yang digunakan pada iterasi selanjutnya
+        
+        fprintf(out,"%f,%f\n", i*T_S,Vc);//output pada file out
     }
 
     fclose(out);
