@@ -6,7 +6,7 @@ double C = 0.000001;
 double Vi = 5;
 double Vc = 0;
 double I;
-double dt = 0.00001;
+double dt = 0.0004;
 double t = 0;
 double Vco;
 

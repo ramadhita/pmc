@@ -1,14 +1,13 @@
 //Alexandra Handayani 18318026
 #include <stdio.h> 
-#define delta 0.0001 //perubahan waktu
+#define delta 0.0001 //perubahan waktu, semakin kecil semakin banyak data yang diperoleh
 #define resistor 10000 
 #define vinput 5 
 #define kapasitor 0.000001
 	
 double t; 
-double a = 1; 
-double b = 1/(resistor*kapasitor); //koefisien 2 persamaan (1/RC) 
-double c = ((-vinput)/(resistor*kapasitor)); //koefisien 3 persamaan (-Vs/RC) 
+double b = 1/(resistor*kapasitor); //koefisien ke-2 persamaan (1/RC) 
+double c = ((-vinput)/(resistor*kapasitor)); //koefisien ke-3 persamaan (-Vs/RC) 
 
 //fungsi dari tegangan tiap waktu (rekursif) 
 double tegangan (double t) {
@@ -20,7 +19,7 @@ double tegangan (double t) {
 	//ketika t>0, maka tegangan akan naik secara eksponensial hingga steady state
 	//rumus dari penurunan rumus diferensial orde 1 
 	else {
-		hasil = (a*tegangan(t-delta) - (c*delta))/(a+b*delta); 
+		hasil = (tegangan(t-delta) - (c*delta))/(1+b*delta); 
 	}
 	return hasil; 
 
@@ -31,8 +30,8 @@ int main () {
 	FILE *fp;
 	fp = fopen("vt.csv","w"); 
 	
-	//penulisan berulang hingga t=0.08 (adalah t ketika pasti sudah steady state)
-	for (t=0; t<0.08; t=t+delta) { 
+	//penulisan berulang hingga t=0.09 (adalah t ketika pasti sudah steady state)
+	for (t=0; t<0.09; t=t+delta) { 
 		fprintf (fp, "%lf; %lf\n", t,tegangan(t)); 
 	}
 	//menutup file 

@@ -16,7 +16,7 @@ double Vo (double t)
     C = 0.000001;
     tc = R*C ;
     Vs = 5;
-    dt = 0.005;
+    dt = 0.001;
 
     if(t<=0)
     {
@@ -41,7 +41,7 @@ int main ()
     C = 0.000001;
     tc = R*C ;
     Vs = 5;
-    dt = 0.005;
+    dt = 0.001;
 
 
     FILE *transienVo ;

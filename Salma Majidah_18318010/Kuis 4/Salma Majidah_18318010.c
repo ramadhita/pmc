@@ -14,7 +14,7 @@
 int main (){
 	//Pointer File
 	FILE *fp; 
-	fp = fopen("D:/test.txt", "w");
+	fp = fopen("kuis4.txt", "w");
 	
 	//Deklarasi koefisien T = RC, dan nilai dt = T
 	double koef = (c*R);
@@ -25,7 +25,7 @@ int main (){
 	double t = 0, vs = 0, v=0;
 	
 	//Melakukan penulisan pada file untuk nilai awal v dan t
-	fprintf(fp, "%lf	%lf \n", v, t);
+	fprintf(fp, "%.3lf	%.2lf \n", v, t);
 	
 	//Menyimpan nilai awal v pada vs
 	vs = v;
@@ -36,7 +36,7 @@ int main (){
 	//Melakukan perlakuan yang sama hingga diperoleh steady state (dv = 0)
 	while ((v-vs) > 0){
 		t += dt;
-		fprintf(fp, "%lf	%lf \n", v, t);
+		fprintf(fp, "%.3lf	%.2lf \n", v, t);
 		vs = v;
 		v = (vi/koef + vs/dt)/((1/koef)+(1/dt));
 	}
