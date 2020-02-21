@@ -22,13 +22,9 @@ void bubbleSort(Data arr[]);
 int main(void)
 {
     int size = 10, Nilai;
-
-    FILE *fp;
-    fp = fopen("temp/test.txt", "w");
-
     char *Nama[]  = {"Andy",
                      "Luck",
-                     "Latina",
+                     "Latin",
                      "Megi",
                      "Lunlu",
                      "FE",
@@ -36,16 +32,21 @@ int main(void)
                      "Do",
                      "RE",
                      "Mi"};
-
+    double avg;
+    FILE *fp;
     Data Tabel[10];
+
+    fp = fopen("temp/Data_Out.txt", "w");
 
     for (int i = 0; i < 10; i++)
     {
         /* code */
         Tabel[i].No =  i+1;
         Tabel[i].Nama = Nama[i];
+
         Tabel[i].Nim = Randoms(1000000, 9999999);
         Tabel[i].Nilai = Randoms(50, 100);
+        
         fprintf(fp, "%d;%d;%s;%d \n", Tabel[i].No,
                 Tabel[i].Nim,
                 Tabel[i].Nama,
@@ -61,13 +62,12 @@ int main(void)
         /* code */
         Nilai+= Tabel[i].Nilai;
     }
+    avg = Nilai/10;
     
-    double avg = Nilai/10;
     fprintf(fp, "Average = %4.2lf \n\n", avg);
 
     bubbleSort(Tabel);
     
-
     for (int i = 0; i < 10; i++)
     {
         /* code */
