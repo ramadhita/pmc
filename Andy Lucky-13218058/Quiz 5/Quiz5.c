@@ -21,7 +21,8 @@ void bubbleSort(Data arr[]);
 
 int main(void)
 {
-    int size = 10, Nilai;
+    int size = 10, Nilai = 0;
+
     char *Nama[]  = {"Andy",
                      "Luck",
                      "Latin",
@@ -33,6 +34,7 @@ int main(void)
                      "RE",
                      "Mi"};
     double avg;
+    
     FILE *fp;
     Data Tabel[10];
 
@@ -56,7 +58,6 @@ int main(void)
     fprintf(fp, "\n");
 
     // Average
-    Nilai = 0;
     for (int i = 0; i < 10; i++)
     {
         /* code */
