@@ -74,7 +74,7 @@ int main(void)
         /* code */
         fprintf(fp, "%d;%d;%s;%d \n", Tabel[i].No,
                 Tabel[i].Nim,
-                Tabel[i].Nama,
+                Tabel[i].Nama,  
                 Tabel[i].Nilai);
     }
 
@@ -90,7 +90,7 @@ int Randoms(int lower, int upper)
     int num = (rand() % (upper - lower + 1)) + lower;
     return(num);
 }
-
+ 
 void swap(Data *a, Data *b)
 {
     Data tmp;
