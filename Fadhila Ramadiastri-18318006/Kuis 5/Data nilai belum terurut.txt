@@ -1,0 +1,10 @@
+1. Haydn 18318001 91 
+2. Tchaikovsky 18318002 67 
+3. Mozart 18318003 84 
+4. Chopin 18318004 50 
+5. Mendelsshon 18318005 69 
+6. Charles Dickens 18318006 74 
+7. Jane Austen 18318007 78 
+8. Conan Doyle 18318008 58 
+9. Mark Twain 18318009 62 
+10. F. Scott Fitzgerald 18318010 64 
