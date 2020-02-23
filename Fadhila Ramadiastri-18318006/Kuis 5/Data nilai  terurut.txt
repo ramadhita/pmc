@@ -1,0 +1,11 @@
+1. Haydn 18318001 91 
+2. Mozart 18318003 84 
+3. Jane Austen 18318007 78 
+4. Charles Dickens 18318006 74 
+5. Mendelsshon 18318005 69 
+6. Tchaikovsky 18318002 67 
+7. F. Scott Fitzgerald 18318010 64 
+8. Mark Twain 18318009 62 
+9. Conan Doyle 18318008 58 
+10. Chopin 18318004 50 
+Nilai rata-rata adalah 69.699997
