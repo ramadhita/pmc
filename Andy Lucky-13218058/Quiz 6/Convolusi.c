@@ -10,7 +10,7 @@ double f1(double t);
 double f2(double t);
 
 int main(void){
-    double X, t;
+    double X, t = 0;
     double dt = 0.01;
     double dX = 0.001;
     double Value = 0;
@@ -19,7 +19,6 @@ int main(void){
     FILE *fp;
     fp = fopen("temp/Convo.txt", "w");
 
-    t = 0;
     while (t >= 0 && t <= 5)
     {
         /* code */
@@ -40,7 +39,7 @@ int main(void){
 double f1(double t)
 {
     // Limit bawah 1 dan limit atas 3
-    if ((t <= 1) || t >= 3)
+    if (t <= 1 || t >= 3)
     {
         /* code */
         return 0;
@@ -56,7 +55,7 @@ double f1(double t)
 double f2(double t)
 {
     // Limit bawah -1 dan limit atas 1
-    if ((t <= -1) || t >= 1)
+    if (t <= -1 || t >= 1)
     {
         /* code */
         return 0;
