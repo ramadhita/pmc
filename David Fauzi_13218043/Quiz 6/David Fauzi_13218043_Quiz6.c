@@ -43,7 +43,7 @@ double f1x(double t)
 {
     if((t>1) && (t<3))
     {
-        return ((t/2)+0.5);
+        return ((t/2)-0.5);
     }
     else
     {
