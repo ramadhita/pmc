@@ -1,0 +1,25 @@
+DATA BASE
+No.;NIM;Nama;Nilai
+1;13218034;Agung Dwi L;91
+2;13218004;Fahmi Muzakki;67
+3;13218065;Aji Bara;84
+4;13218077;Lembayung Sore;50
+5;13218064;Biru Langit;69
+6;13218098;Ombak Samudra;74
+7;13218010;Bening Embun ;78
+8;13218011;Mekar Sari;58
+9;13218015;Sutan Mulia;62
+10;13218020;Muktamar ;64
+DATA BASE (sorted)
+No.;NIM;Nama;Nilai
+1;13218034;Agung Dwi L;91
+2;13218065;Aji Bara;84
+3;13218010;Bening Embun ;78
+4;13218098;Ombak Samudra;74
+5;13218064;Biru Langit;69
+6;13218004;Fahmi Muzakki;67
+7;13218020;Muktamar ;64
+8;13218015;Sutan Mulia;62
+9;13218011;Mekar Sari;58
+10;13218077;Lembayung Sore;50
+Rata-rata nilai mahasiswa adalah : 69
