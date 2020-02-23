@@ -1,0 +1,12 @@
+1,13250000,Clement I,73
+2,13250001,Clement II,5
+3,13250002,Clement III,79
+4,13250003,Clement IV,5
+5,13250004,Clement V,23
+6,13250005,Clement VI,94
+7,13250006,Clement VII,74
+8,13250007,Clement VIII,22
+9,13250008,Clement XI,71
+10,13250009,Clement X,64
+
+Rata-rata nilai : 255.00
