@@ -1,0 +1,26 @@
+1 | Menjel | 1321022 | 91 
+2 | Martin | 1321021 | 55 
+3 | Cedric | 1321032 | 60 
+4 | Astuti | 1321012 | 81 
+5 | Josh | 1321042 | 94 
+6 | Michel | 13211009 | 66 
+7 | Felix | 1321028 | 53 
+8 | Ian | 1321122 | 83 
+9 | Rem | 1321082 | 84 
+10 | Feroz | 1321092 | 85 
+
+
+-- Hasil Sorting Nilai Terurut Mengecil-- 
+---------------------------------------
+1 | Josh | 1321042 | 94 
+2 | Menjel | 1321022 | 91 
+3 | Feroz | 1321092 | 85 
+4 | Rem | 1321082 | 84 
+5 | Ian | 1321122 | 83 
+6 | Astuti | 1321012 | 81 
+7 | Michel | 13211009 | 66 
+8 | Cedric | 1321032 | 60 
+9 | Martin | 1321021 | 55 
+10 | Felix | 1321028 | 53 
+
+*Rata - Rata Nilai Mahasiswa = 75.199997 

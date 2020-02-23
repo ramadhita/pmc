@@ -1,0 +1,27 @@
+File Before Sorting 
+Nama, NIM, Nilai
+Ian Ezekiel Budiman, 13218072, 91
+Christina Alexandra, 18318044, 55
+Gayus Emanuel T., 13218067, 60
+Michael Andersean, 13218234, 81
+David Susilo, 13218077, 94
+William Darmawan, 18018114, 66
+Emanuela Prisha, 18318090, 53
+Matthew Lukman , 18018343, 83
+Indra Saputra , 18318054, 84
+Ardi Luqman A., 18018072, 85
+
+File After Sorting
+Nama, NIM, Nilai
+David Susilo, 13218077, 94
+Ian Ezekiel Budiman, 13218072, 91
+Ardi Luqman A., 18018072, 85
+Indra Saputra , 18318054, 84
+Matthew Lukman , 18018343, 83
+Michael Andersean, 13218234, 81
+William Darmawan, 18018114, 66
+Gayus Emanuel T., 13218067, 60
+Christina Alexandra, 18318044, 55
+Emanuela Prisha, 18318090, 53
+
+Rata-rata nilai : 75.20 

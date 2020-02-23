@@ -25,7 +25,9 @@ void main()
 
     while (Vo_t < 4.999999)
     {   
-        fprintf(fp, "%.3f,%.5lf\n", t, Vo_t);    //disimpan dalam bentuk yang 
+        /* Keluaran ke dalam file data.txt disimpan dalam bentuk seperti .csv */
+        fprintf(fp, "%.3f,%.5lf\n", t, Vo_t);   
+       
         Vo_t = (Vi + ((R*C*Vo_to)/delta_t)) / (1 +((R*C)/delta_t));
         Vo_to = Vo_t;
         t += delta_t;

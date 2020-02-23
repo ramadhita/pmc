@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include <stdlib.h>
+#include <stdlib.h  >
 // INISIASI
 double r1=10000;
 double c1=0.000001;

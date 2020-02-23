@@ -43,7 +43,7 @@ int main () {
 	//For loop untuk menuliskan nilai Tegangan Output (Vo) dalam array
 	//Ke file eksternal IanAzaryaAryanto_13218055_Quiz04_DataCSV.csv
 	printf("\nNilai Vo dengan partisi waktu %lf s \n",dt);
-	printf("telah berhasil diwrite ke dalam file lowpass.csv...");
+	printf("telah berhasil diwrite ke dalam file IanAzaryaAryanto_13218055_Quiz04_DataCSV.csv...");
 	fclose(myfile);
 	//Menutup file eksternal IanAzaryaAryanto_13218055_Quiz04_DataCSV.csv setelah selesai digunakan
 	

@@ -27,10 +27,10 @@ int main(){
 FILE *out;
 int main(){
     out = fopen("out.txt", "w");
-    double curr;
+    double curr = 5/Res;// current awal;
     double delV;
     double Vc = 0;
-    curr = 5/Res;// current awal
+    // curr = 5/Res;// current awal
 
     int i = 0;// inisialisasi pada i
 
