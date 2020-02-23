@@ -5,7 +5,7 @@
 
 double f1(double x){                    // fungsi f1
     if ((x >= 1) && (x <= 3)){          // pada 1 <= x <= 3 fungsi bernilai x - 1
-        return (x - 1);
+        return ((x - 1)/2);
     }
     else {                              // otherwise 0
         return 0;
