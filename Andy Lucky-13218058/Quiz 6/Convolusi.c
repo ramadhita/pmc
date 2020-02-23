@@ -1,5 +1,5 @@
 /*
-Quiz 5-2 : Menghasilkan konvolusi dari 2 persamaan
+Quiz 6 : Menghasilkan konvolusi dari 2 persamaan
  f1(x) = ((1/2)*(t-1)).u(t-1).u(3-t)
  f2(x) = (r(t+1)-2r(t-2)).u(t+1).u(1-t)
 */
