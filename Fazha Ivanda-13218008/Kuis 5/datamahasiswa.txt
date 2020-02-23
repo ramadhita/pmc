@@ -1,0 +1,29 @@
+Nilai Sebelum di Sort 
+
+ No Nama Nim Nilai 
+ 1 Valdo 13221024 91 
+ 2 Bagus 13221090 55 
+ 3 Alghi 13221021 60 
+ 4 Daffa 13221004 81 
+ 5 Aldi 13221091 94 
+ 6 Dzaky 13221055 66 
+ 7 Fauzi 13221119 53 
+ 8 Farhan 13221011 83 
+ 9 Fadhil 13221004 84 
+ 10 Rijal 13221099 85 
+
+ Nilai Setelah di Sort
+
+ No Nama Nim Nilai
+ 1 Aldi 13221091 94 
+ 2 Valdo 13221024 91 
+ 3 Rijal 13221099 85 
+ 4 Fadhil 13221004 84 
+ 5 Farhan 13221011 83 
+ 6 Daffa 13221004 81 
+ 7 Dzaky 13221055 66 
+ 8 Alghi 13221021 60 
+ 9 Bagus 13221090 55 
+ 10 Fauzi 13221119 53 
+
+ Rata-rata nilai Mahasiswa : 75.000000 
