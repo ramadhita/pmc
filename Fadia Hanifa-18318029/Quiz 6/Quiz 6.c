@@ -33,7 +33,7 @@ int main(){
     // Deklarasi Variabel
     int b = 10;                         // batas atas x
     int a = 0;                          // batas bawah x
-    double d = 0.01;                    // increment dari x
+    double d = 0.001;                    // increment dari x
     double x, t, y;                     // deklarasi x dan t sebagai index looping dan y sebagai placeholder nilai f3
 
     fprintf(fp, "x,f3\n");              // menge-print judul tabel pada csv
