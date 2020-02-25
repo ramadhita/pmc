@@ -22,7 +22,6 @@ int main(){
         volume += (gain - loss);
         h = volume/1;
         printf("%f %f\n",h,t);
-        fprintf(output,"%f,%f\n",h,t);
         t += dt;
     }
     fclose(output);
