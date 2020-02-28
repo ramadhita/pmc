@@ -19,7 +19,7 @@ int main (){
         for (j=-1;j<=3;j=j+dx){
             x = f1(j);
             h = f2(i-j);
-            y = temp + (x*h); // menghitung konvolusi x dengan h
+            y = temp + (x*h*dx); // menghitung konvolusi x dengan h
             temp = y;
         }
         fprintf(fp1, "%.2f \n", y); // menyimpan nilai f3(x) ke dalam file f3(x).txt
