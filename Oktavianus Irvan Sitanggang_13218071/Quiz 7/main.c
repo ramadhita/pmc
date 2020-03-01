@@ -41,7 +41,7 @@ int main(){
         speedAir = sqrt(2*grav*h);
         h -= (speedAir *PI* radLubang*radLubang)*t_s/area;
         h += debit*t_s/(area);
-        fprintf(in,"%f,%f,%f\n", h, t,);
+        fprintf(in,"%f,%f\n", h, t);
         t += t_s;
     }
     fclose(in);
