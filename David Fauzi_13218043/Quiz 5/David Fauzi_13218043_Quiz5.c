@@ -25,7 +25,7 @@ int arr[10];
 
 int main() {
     // Input dan randomize data
-    inputdata(itb);
+    inputdata();
     // Write data sebelum diolah ke txt file
     writebefore();
     // Sorting nilai

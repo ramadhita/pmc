@@ -1,0 +1,11 @@
+1	10000041	Tegan Stall		67
+2	10006334	Yelena Gallup		50
+3	10019169	Trenton Villeda		74
+4	10011478	Catherin Eckart		58
+5	10026962	Stanton Sennett		64
+6	10005705	Brad Hadsell		95
+7	10023281	Nellie Lacross		77
+8	10009961	Susan Forde		91
+9	10002995	Florence Jeske		92
+10	10004827	Alfred Mikell		86
+Rata-rata = 75

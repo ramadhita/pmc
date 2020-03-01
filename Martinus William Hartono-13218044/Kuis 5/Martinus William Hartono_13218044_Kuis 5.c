@@ -10,42 +10,24 @@
 #include<stdio.h>
 #include<string.h>
 
-void swap(int *xp, int *yp)
-{
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
-
-// A function to implement bubble sort
-void bubbleSort(int arr[], int n)
-{
-   int i, j;
-   for (i = 0; i < n-1; i++)
-
-       // Last i elements are already in place
-       for (j = 0; j < n-i-1; j++)
-           if (arr[j] < arr[j+1])
-              swap(&arr[j], &arr[j+1]);
-}
-
-int main(void)
-{
-    struct student
+struct student
     {
         int no;
         char name[50];
         char nim[8];
         int nilai;
     };
+struct student s[10], s_sorted[10];
+int buff_arr_nilai[10];
+int i,j,n;
+double sum=0, average;
 
-    struct student s[10];
-    struct student s_sorted[10];
+void swap(int *xp, int *yp);
+void bubbleSort(int arr[], int n);
+void printToFile(FILE *fp, struct student x[10]);
 
-    int i,j,n;
-    double sum=0, average;
-    int arr_nilai[10];
-
+int main(void)
+{
     FILE *fp1;
     fp1 = fopen("unsorted.csv", "w+");
 
@@ -85,41 +67,65 @@ int main(void)
         sum = sum + s[i].nilai;
     };
 
-    for (i=0; i<10; i=i+1)
-    {
-        fprintf(fp1, "%d,", s[i].no);
-        fprintf(fp1, "%s,", s[i].nim);
-        fprintf(fp1, "%s,", s[i].name);
-        fprintf(fp1, "%d\n", s[i].nilai);
-    };
-
     for(i=0;i<10;i++)
     {
-        arr_nilai[i] = s[i].nilai;
+        buff_arr_nilai[i] = s[i].nilai;
     };
 
     //SORT
-    n = sizeof(arr_nilai)/sizeof(arr_nilai[0]);
-    bubbleSort(arr_nilai, 10);
+    n = sizeof(buff_arr_nilai)/sizeof(buff_arr_nilai[0]);
+    bubbleSort(buff_arr_nilai, 10);
 
     for(i=0;i<10;i++)
     {
         for(j=0;j<10;j++)
         {
-            if(arr_nilai[i] == s[j].nilai)
+            if(buff_arr_nilai[i] == s[j].nilai)
             {
-                fprintf(fp2, "%d,", s[j].no);
-                fprintf(fp2, "%s,", s[j].nim);
-                fprintf(fp2, "%s,", s[j].name);
-                fprintf(fp2, "%d\n", s[j].nilai);
+                s_sorted[i].no = s[i].no;
+                strcpy(s_sorted[i].nim, s[j].nim);
+                strcpy(s_sorted[i].name, s[j].name);
+                s_sorted[i].nilai = s[j].nilai;
             };
         };
     };
 
     average = sum/10.0;
-    printf("Nilai rata-rata : %.2f", average);
+    printToFile(fp1, s);
+    printToFile(fp2, s_sorted);
+
     fclose(fp1);
     fclose(fp2);
 
     return(0);
+}
+
+void printToFile(FILE *fp, struct student x[10])
+{
+    int i;
+    for (i=0; i<10; i=i+1)
+    {
+        fprintf(fp, "%d,", x[i].no);
+        fprintf(fp, "%s,", x[i].nim);
+        fprintf(fp, "%s,", x[i].name);
+        fprintf(fp, "%d\n", x[i].nilai);
+    };
+    fprintf(fp, "\nMean = %f", average);
+}
+
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
+void bubbleSort(int arr[], int n)
+{
+   int i, j;
+   for (i = 0; i < n-1; i++)
+
+       for (j = 0; j < n-i-1; j++)
+           if (arr[j] < arr[j+1])
+              swap(&arr[j], &arr[j+1]);
 }
