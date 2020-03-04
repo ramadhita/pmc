@@ -25,6 +25,8 @@ int main()
 	tmp = 0; //menyimpan nilai h(t-dt)
 	vol = 0;
 	
+	tmp = 0;
+	
 	while (h < 1)
 	{
 		printf("%.3lf, ", t);
@@ -33,8 +35,9 @@ int main()
 		fprintf(fp, "%.3lf, ", t);
 		fprintf(fp, "%.3lf\n", h);
 		
+		h = h + ((0.1 - (a*sqrt(2*g*tmp)))*dt);
+		//debitnya 100L/detik karena dgn 1L/detik tidak bisa penuh
 		tmp = h;
-		h = h + ((0.001/a - a*sqrt(2*g*tmp))*dt);
 		
 		t = t + dt;
 	}
