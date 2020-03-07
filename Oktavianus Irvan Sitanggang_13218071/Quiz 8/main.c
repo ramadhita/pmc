@@ -24,8 +24,6 @@ void swap(int*a , int*b){
     *b = temp;
 }
 
-int A[10][10];
-
 void printMatrix(int A[10][10]){
     int i, j, k;
     for (i = 0; i < 10; i++){
@@ -43,6 +41,8 @@ void printMatrix(int A[10][10]){
     }
     printf("\n");
 }
+
+int A[10][10];
 
 int main(){
     int i,j;
