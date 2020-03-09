@@ -7,16 +7,17 @@ int Randoms(int lower, int upper);
 int main(void){
     int A[10][10], B[10][10];
     int temp;
+    int i, j;
 
     FILE *fp;
     fp = fopen("temp/quiz8.txt", "w");
 
     // Ganti A-C, B -D
 
-    for (int i = 0; i < 10; i++)
+    for (i = 0; i < 10; i++)
     {
         /* code */
-        for (int j = 0; j < 10; j++)
+        for (j = 0; j < 10; j++)
         {
             /* code */
             temp = Randoms(-10,10);
@@ -27,10 +28,11 @@ int main(void){
     }
 
     fprintf(fp, "\n \n");
-    for (int i = 0; i < 10; i++)
+    
+    for (i = 0; i < 10; i++)
     {
         /* code */
-        for (int j = 0; j < 10; j++)
+        for (j = 0; j < 10; j++)
         {
             /* code */
             if (i == j || i == (9 - j))
@@ -58,10 +60,10 @@ int main(void){
         }
     }
 
-    for (int i = 0; i < 10; i++)
+    for (i = 0; i < 10; i++)
     {
         /* code */
-        for (int j = 0; j < 10; j++)
+        for (j = 0; j < 10; j++)
         {
             /* code */
             fprintf(fp, ";%d", B[i][j]);
