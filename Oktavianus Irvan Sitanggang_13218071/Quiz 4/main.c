@@ -10,10 +10,6 @@
 #include <math.h>
 #include <string.h>
 
-int main(){
-    
-    return 0;
-}
 
 #define TMAX 10000
 #define Cap 0.000001
